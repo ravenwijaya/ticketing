@@ -1,0 +1,15 @@
+# This is a basic workflow to help you get started with Actions
+
+name: tests-auth
+
+
+on:
+  pull_request:
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd auth && npm install && npm run test:ci
