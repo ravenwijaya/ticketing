@@ -71,7 +71,6 @@ it('returns a 201 with valid inputs', async () => {
     status: OrderStatus.Created,
   });
   await order.save();
-
   await request(app)
     .post('/api/payments')
     .set('Cookie', global.signin(userId))
