@@ -1,13 +1,9 @@
-# This is a basic workflow to help you get started with Actions
-
 name: tests-auth
 
-
 on:
-  pull_request:
+  pull_request
 
 jobs:
-  # This workflow contains a single job called "build"
   build:
     runs-on: ubuntu-latest
     steps:
